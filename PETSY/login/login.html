@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="image1 mob">
+            <img src="https://ecragroup.com/wp-content/uploads/2016/08/login-bg.png" alt="background image">
+        </div>
+        <div class="form_container">
+            <div class="form1">
+                <p id="pd"><span>Login</span> Your Account</p>
+                <form>
+                    <div class="inside_form">
+                        <input type="text" id="name1" class="new" placeholder="Enter phone or email">
+                        <div class="passeye">
+                            <input type="password" id="password" class="new" placeholder="Enter Your Password">
+                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        </div>
+                        <span class="spn hide"><i class="fas fa-circle-xmark"></i> Incorrect Password</span>
+                        <div class="remandfor">
+                            <div>
+                                <label for="remember">Remember</label>
+                                <input type="checkbox" id="remember">
+                            </div>
+                            <a href="#"class="a1" >forgot password?</a>
+                        </div>
+                        <button id="grad-btn">SUBMIT</button>
+                        <div class="account_creation">
+                            <a href="../signup/signup.html" class="a1">Create an account</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+/*overall container*/
+.container{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/*image tag*/
+.image1 img{
+    height: calc(100%);
+    width: 60vw;
+    max-width: 60vw;
+    max-height: 100%;
+}
+
+
+/*form right side movement*/
+.form_container{
+    background-color: whitesmoke;
+    height: 100vh ;
+    width: 50vw;
+    position: relative;
+}
+
+/*form1 box*/
+.form1{
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 8%;
+    left: 8%;
+}
+
+/*form1 paragraph*/
+.form1 p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*Inside Form*/
+.inside_form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*login name*/
+#pd{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*username and password styling*/
+.new{
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgb(90, 97, 237);
+    margin-top: 25px;
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(66, 52, 154);
+    width: 100%;
+ }
+
+/*forgot and remember password alignment*/
+.remandfor{
+    font-size: 14px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/*remember*/
+#remember{
+    vertical-align: middle;
+}
+
+/*Anchor tag*/
+.a1 {
+    text-decoration: none;
+    color: black;
+}
+
+.a1:hover {
+    cursor: pointer;
+}
+
+/*Good and Login style*/
+span{
+    color: #6495ed;
+}
+
+.spn {
+    color: rgb(243, 69, 69);
+}
+
+.hide {
+    display: none;
+}
+
+form .bi {
+    cursor: pointer;
+    margin-top: 25px;
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    margin-left: -30px;
+}
+
+.passeye {
+    display: flex;
+}
+
+/*submit button*/
+#grad-btn {
+    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    height: 40px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+#grad-btn:hover { 
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+/*account creation*/
+.account_creation{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Media Query for Login Page */
+@media (max-width: 980px) {
+    .mob {
+        display: none;
+    }
+    .form_container {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 360px) {
+    .remandfor {
+        min-width: 390px;
+    }
+}
+
